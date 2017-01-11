@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "70A8718EE4E9A0EF5C53F4AC5803262EE1DE5654",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A290B5EFB5A8A43FBC89BD75B3031992A1D19F2D" : 9223372036854775807,
+    "70A8718EE4E9A0EF5C53F4AC5803262EE1DE5654" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3899360B-9B66-48E0-BAB7-D46087E8F32A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A290B5EFB5A8A43FBC89BD75B3031992A1D19F2D" : "Aurelius\/Telescope\/Telescope_iOS\/WebView.bundle\/js\/MathJax\/",
+    "70A8718EE4E9A0EF5C53F4AC5803262EE1DE5654" : "Aurelius\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Aurelius",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Aurelius.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/proxpero\/Aurelius.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70A8718EE4E9A0EF5C53F4AC5803262EE1DE5654"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mathjax\/MathJax.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A290B5EFB5A8A43FBC89BD75B3031992A1D19F2D"
+    }
+  ]
+}

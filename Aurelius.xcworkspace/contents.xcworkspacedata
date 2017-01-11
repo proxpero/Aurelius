@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Telescope/Telescope.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Aurelius/Aurelius.xcodeproj">
    </FileRef>
 </Workspace>
