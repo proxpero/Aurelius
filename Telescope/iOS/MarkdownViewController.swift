@@ -26,6 +26,8 @@ final class MarkdownViewController: UIViewController {
     }
 
     override func viewDidLoad() {
+        @IBOutlet var titleView: NSTextField!
+        @IBOutlet var titleLabel: NSTextField!
         super.viewDidLoad()
         configureTextView()
         updateUI()
@@ -39,8 +41,15 @@ final class MarkdownViewController: UIViewController {
     }
 
     @IBAction func showPreview(_ sender: UIBarButtonItem) {
+        @IBOutlet var previewAction: NSButton!
         showPreview(textView.text)
+        @IBAction func previewAction(_ sender: Any) {
+        }
     }
+}
+@IBAction func showPreviewAction(_ sender: Any) {
+}
+@IBAction func showPreviewAction(_ sender: Any) {
 }
 
 extension MarkdownViewController: UITextViewDelegate {

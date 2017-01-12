@@ -1,15 +1,27 @@
 //
-//  WebView.swift
+//  HtmlViewController.swift
 //  Telescope
 //
-//  Created by Todd Olsen on 1/10/17.
-//  Copyright © 2017 proxpero. All rights reserved.
+//  Created by Todd Olsen on 1/11/17.
+//
 //
 
+import Cocoa
 import WebKit
-import Aurelius
 
-open class WebView: WKWebView {
+final class HtmlViewController: NSViewController {
+
+    var webView = TKOWebView(frame: CGRect.zero)
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.constrain(subview: webView)
+    }
+
+
+}
+
+final class TKOWebView: WKWebView {
 
     /**
      Initializes a web view with the results of rendering a CommonMark Markdown string
@@ -52,11 +64,12 @@ open class WebView: WKWebView {
         return template.replacingOccurrences(of: "MY_HTML", with: htmlString)
     }
 
+
 }
 
 // MARK: - WKNavigationDelegate
 
-extension WebView: WKNavigationDelegate {
+extension TKOWebView: WKNavigationDelegate {
 
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         guard let url = navigationAction.request.url else { return }
@@ -72,4 +85,20 @@ extension WebView: WKNavigationDelegate {
         }
     }
     
+}
+
+extension NSView {
+
+    public func constrain(subview: NSView) {
+        subview.frame = frame
+        subview.translatesAutoresizingMaskIntoConstraints = false
+        if !subviews.contains(subview) {
+            addSubview(subview)
+        }
+        topAnchor.constraint(equalTo: subview.topAnchor).isActive = true
+        bottomAnchor.constraint(equalTo: subview.bottomAnchor).isActive = true
+        leftAnchor.constraint(equalTo: subview.leftAnchor).isActive = true
+        rightAnchor.constraint(equalTo: subview.rightAnchor).isActive = true
+    }
+
 }
