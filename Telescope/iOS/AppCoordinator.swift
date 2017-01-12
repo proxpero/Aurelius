@@ -29,7 +29,7 @@ final class AppCoordinator {
         let documentsVC = navigationController.viewControllers[0] as! DocumentsViewController
         documentsVC.documents = sampleDocuments
         documentsVC.didSelect = showDocument
-        documentsVC.didTapNew = didTapNew
+        documentsVC.didCreateNew = saveNewDocument
 
     }
 
@@ -55,7 +55,7 @@ final class AppCoordinator {
         
     }
     
-    func didTapNew() {
+    func saveNewDocument(document: Document) {
         
     }
 }

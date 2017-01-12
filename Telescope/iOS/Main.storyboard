@@ -48,7 +48,13 @@
                             <outlet property="delegate" destination="XML-AW-GPi" id="qdA-q4-LAL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="c4n-Ut-16V"/>
+                    <navigationItem key="navigationItem" id="c4n-Ut-16V">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="MAn-eP-L8O">
+                            <connections>
+                                <action selector="createNewDocumentWithSender:" destination="XML-AW-GPi" id="pBh-9p-kHG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kB-le-6rJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

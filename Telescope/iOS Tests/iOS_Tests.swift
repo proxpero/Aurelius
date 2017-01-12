@@ -1,15 +1,14 @@
 //
-//  Telescope_iOSTests.swift
-//  Telescope_iOSTests
+//  iOS_Tests.swift
+//  iOS Tests
 //
 //  Created by Todd Olsen on 1/11/17.
 //
 //
 
 import XCTest
-@testable import Telescope_iOS
 
-class Telescope_iOSTests: XCTestCase {
+class iOS_Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
